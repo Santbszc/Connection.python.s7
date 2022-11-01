@@ -77,4 +77,7 @@ if __name__=="__main__":
         
         print("-----------")
         #print("Liga(DB120.DBX0.0):", k, "\nDesliga(DB120.DBX0.1):", l, "\nMotor(DB120.DBX0.2):", m, "\nContador Ligado(DB120.DBW8):", n, "\nContador Desligado(DB120.DBW10):", o)
+        #print("Liga(DB120.DBX0.0):", k, "\nDesliga(DB120.DBX0.1):", l, "\nMotor(DB120.DBX0.2):", m, "\nContador Ligado(DB120.DBW8):", n, "\nContador Desligado(DB120.DBW10):", o)
+        #print("Liga(DB120.DBX0.0):", k, "\nDesliga(DB120.DBX0.1):", l, "\nMotor(DB120.DBX0.2):", m, "\nContador Ligado(DB120.DBW8):", n, "\nContador Desligado(DB120.DBW10):", o)
+        
         time.sleep(1)
