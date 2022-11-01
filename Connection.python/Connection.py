@@ -33,6 +33,8 @@ def ReadMemory(plc,byte,bit,datatype,area1,comeco):
 #     elif datatype==S7WLDWord:
 #         return get_dword(result,0)
 #     else:
+#          return None
+
 
 if __name__=="__main__":
     plc = c.Client()
