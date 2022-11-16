@@ -49,6 +49,14 @@ if __name__=="__main__":
         retSoda = ReadMemory(plc,27,3,S7WLBit,Areas.MK,0)
         acido = ReadMemory(plc,27,4,S7WLBit,Areas.MK,0)
         retAcido = ReadMemory(plc,27,5,S7WLBit,Areas.MK,0)
+        agua2 =  ReadMemory(plc,28,0, S7WLBit,Areas.MK,0)
+        alivioVapor = ReadMemory(plc,28,1, S7WLBit,Areas.MK,0)
+        vapor2 = ReadMemory(plc,28,2,S7WLBit,Areas.MK,0)
+        entradaCO2 = ReadMemory(plc,28,3,S7WLBit,Areas.MK,0)
+        ar2 =  ReadMemory(plc,28,4,S7WLBit,Areas.MK,0)
+        entradaProduto= ReadMemory(plc,28,5,S7WLBit,Areas.MK,0)
+        entradaCerveja = ReadMemory(plc,28,6,S7WLBit,Areas.MK,0)
+
         #c = ReadMemory(plc,0,2,S7WLBit,Areas.MK,0)
         #d = ReadMemory(plc,10,0,S7WLByte,Areas.MK,0)
         #e = ReadMemory(plc,14,0,S7WLWord,Areas.MK,0)
@@ -71,11 +79,25 @@ if __name__=="__main__":
         
         print("Processo de Lavagem Barril - CHOPP")
         print(date_time)
-        print("\narLavagem(M27.6):", ar, "\naguaLavagem(M27.1): ", agua, "\nDrenoLavagem(M27.0):", dreno, "\nsodaLavagem(M27.2):",soda, "\nretornoSodaLavagem(M27.3):",retSoda,
-        "\nacidoLavagem(M27.4):",acido, "\nretornoAcidoLavagem(M27.5):",retAcido )
+        print("\nAr Comprimido - (M27.6):", ar, 
+              "\nÁgua Quente - (M27.1): ", agua,
+              "\nDreno - (M27.0):", dreno,
+              "\nSoda Cáustica - (M27.2):",soda, 
+              "\nRetorno Soda - (M27.3):",retSoda,
+              "\nÁcido - (M27.4):",acido, 
+              "\nRetorno Ácido - (M27.5):",retAcido )
         print("-----------")
         
         print("-----------")
+        print("Processo de Enchimento Barril - CHOPP")
+
+        print("\nÁgua Quente - (M28.0):", agua2, 
+              "\nAlívio Vapor - (M28.1):",alivioVapor, 
+              "\nVapor - (M28.2):",vapor2, 
+              "\nEntrada CO2 - (M28.3):", entradaCO2,
+              "\nAr Comprimido - (M28.4):",ar2,
+              "\nEntrada Produto - (M28.5):", entradaProduto, 
+              "\nEntrada Cerveja - (M28.6):",entradaCerveja) 
         #print("Liga(DB120.DBX0.0):", k, "\nDesliga(DB120.DBX0.1):", l, "\nMotor(DB120.DBX0.2):", m, "\nContador Ligado(DB120.DBW8):", n, "\nContador Desligado(DB120.DBW10):", o)
 
-        time.sleep(1)
+        time.sleep(0.5)
