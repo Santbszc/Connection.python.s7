@@ -87,7 +87,6 @@ if __name__=="__main__":
               "\nÁcido - (M27.4):",acido, 
               "\nRetorno Ácido - (M27.5):",retAcido )
         print("-----------")
-        
         print("-----------")
         print("Processo de Enchimento Barril - CHOPP")
 
