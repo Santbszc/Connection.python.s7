@@ -67,7 +67,7 @@ while(True):
         #k = ReadMemory(plc,0,0,S7WLBit,Areas.DB,120)
         
     print("Processo de Lavagem Barril - CHOPP")
-    print(date_time)
+    print("Data e Hora", date_time)
     print("\nAr Comprimido - (M27.6):", ar, 
               "\nÁgua Quente - (M27.1): ", agua,
               "\nDreno - (M27.0):", dreno,
@@ -80,7 +80,7 @@ while(True):
     print("----------//----------")
     
     print("Processo de Enchimento Barril - CHOPP")
-    print(date_time)
+    print("Data e Hora", date_time)
     print("\nÁgua Quente - (M28.0):", agua2, 
               "\nAlívio Vapor - (M28.1):",alivioVapor, 
               "\nVapor - (M28.2):",vapor2, 
