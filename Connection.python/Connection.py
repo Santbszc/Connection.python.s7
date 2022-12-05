@@ -35,7 +35,6 @@ def ReadMemory(plc,byte,bit,datatype,area1,comeco):
 #     else:
 #          return None
 
-
 plc = c.Client()
 plc.connect('10.32.22.85',0,2)
 while(True):
@@ -65,7 +64,6 @@ while(True):
         #j = ReadMemory(plc,0,0,S7WLBit,Areas.PA,0)
         # Ler DB (DB)
         #k = ReadMemory(plc,0,0,S7WLBit,Areas.DB,120)
-        
     print("Processo de Lavagem Barril - CHOPP")
     print("Data e Hora", date_time)
     print("\nAr Comprimido - (M27.6):", ar, 
