@@ -37,7 +37,7 @@ def ReadMemory(plc,byte,bit,datatype,area1,comeco):
 
 plc = c.Client()
 plc.connect('10.32.22.85',0,2)
-while(True):
+while True:
     os.system('cls')
     #Processo da Cabeça de Lavagem
     ar = ReadMemory(plc,27,6,S7WLBit,Areas.MK,0)
