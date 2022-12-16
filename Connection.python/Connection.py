@@ -77,10 +77,9 @@ while True:
               "\nRetorno Soda - (M27.3):",retSoda,
               "\nÁcido - (M27.4):",acido, 
               "\nRetorno Ácido - (M27.5):",retAcido )
-    
+    print("\n")
     print("----------//----------")
-    print("----------//----------")
-    
+    print("\n")
     print("Processo de Enchimento Barril - CHOPP")
     print("Data e Hora", date_time)
     print("\nÁgua Quente - (M28.0):", agua2, 
