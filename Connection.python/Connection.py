@@ -55,6 +55,11 @@ while True:
     ar2 =  ReadMemory(plc,28,4,S7WLBit,Areas.MK,0)
     entradaProduto= ReadMemory(plc,28,5,S7WLBit,Areas.MK,0)
     entradaCerveja = ReadMemory(plc,28,6,S7WLBit,Areas.MK,0)
+    #Junção das memórias para variaveis
+    Var = [ar,agua,dreno,soda,retSoda,acido,retAcido,agua2,alivioVapor,vapor2,entradaCO2,ar2,entradaProduto,entradaCerveja]
+    #envio das Variaveis para TXT (Manipulação do dash)
+    f = open('dashBoard.txt', 'w')
+    f.write(str(Var))
     #........................................................
     now = datetime.now()
     date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
